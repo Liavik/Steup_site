@@ -4,127 +4,147 @@
     box-sizing: border-box;
 }
 
-header,
-section h2 {
-    font-family: "Concert One", sans-serif;
-}
-
-body, input, textarea {
-    font-family: "Quicksand", sans-serif;
-    font-size: 15px;
-}
-
 header {
+    font-family: "Concert One", sans-serif;
     padding: 15px 0;
     background-color: #56C9DB;
-    color: aliceblue;
 }
 
-header h1 {
+.cabeçalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titulo {
     font-size: 45px;
-}
-
-header nav li {
-    display: inline;
-    margin-left: 15px;
-    color: aliceblue;
-}
-
-header nav li a {
-    color: aliceblue;
+    font-weight: bolder;
     text-decoration: none;
+    color: aliceblue;
+}
+
+header input {
+    width: 500px;
+    font-family: "Concert One", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    border-color: #AF98E6;
+    border-style: double;
+    margin-top: 25px;
+}
+
+header input:focus {
+    outline-color: #e273a7;
+}
+
+header button{
+    background-color: #AF98E6;
+    color: aliceblue;
+    border: none;
+    font-family: "Concert One", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 65px;
+}
+
+header button:hover {
+    background-color: #e273a7;
+}
+
+header a img {
+    height: 25px;
+    margin-top: 20px;
+}
+
+.setores ul {
+    text-align: center;
+    margin-top: 15px;
+}
+.setores li {
+    display: inline;
+    margin: 0 50px;
+}
+
+.setores a {
+    text-decoration: none;
+    color: aliceblue;
     font-size: 20px;
 }
 
-.container{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.brands-list img {
-    height: 25px;
-}
-
-.brands-list li {
-    display: inline;
-}
-
-section {
-    padding: 25px 0;
+body {
+    font-family: "Quicksand", sans-serif;
     background-color: azure;
+    color: grey;
 }
 
-#about .container {
-    background-color: aliceblue;
+section > img{
+    width: 1850px;
 }
 
-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.enunciado {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    text-align: center;
 }
 
-section h2 {
-    margin-bottom: 15px;
+.enunciado h2 {
+    font-family: "Concert One", sans-serif;
+    font-size: 40px;
     color: #76C5A5;
-    text-align: center;
-    font-size: 30px;
 }
 
-section h3 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-align: center;
-    color: #f1db5b;
-}
-
-section p {
-    margin-bottom: 7px;
-    color: #000;
-}
-
-section div img {
-    height: 700px;
-}
-
-section img {
-    margin-right: 15px;
-}
-
-.social-links img {
-    height: 25px;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 8px;
-}
-
-.social-links li a {
-    text-decoration: none;
-}
-
-#contact .container {
-    display: block;
-}
-
-.contact-methods {
+.ofertas{
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    margin: 0 30px;
 }
 
-.contact-methods div {
+.ofertas img {
+    height: 190px;
+}
+
+.ofertas button {
+    background-color: #AF98E6;
+    color: aliceblue;
+    border: none;
+    font-family: "Concert One", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.pesquisa {
+    text-align: center;
+    margin: 30px 500px;
     background-color: aliceblue;
+}
+
+.pesquisa h2 {
+    font-family: "Concert One", sans-serif;
+    color: #f1db5b;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.pesquisa p{
+    margin-bottom: 15px;
+}
+
+form {
+    display: inline-grid;
 }
 
 form input,
 form textarea,
 form button {
-    display: block;
     width: 320px;
     margin-bottom: 7px;
     padding: 7px;
+    border-color: #AF98E6;
+    border-style: double;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
 }
 
 form textarea {
@@ -132,25 +152,26 @@ form textarea {
     height: 180px;
 }
 
+input:focus, textarea:focus {
+    outline-color: #e273a7;
+}
+
 Form button {
     background-color: #AF98E6;
     color: aliceblue;
-    border: none;
     font-family: "Concert One", sans-serif;
     font-size: 16px;
     cursor: pointer;
+    border: none;
 }
 
 form button:hover {
     background-color: #e273a7;
 }
 
-input:focus, textarea:focus {
-    outline-color: #e273a7;
-}
-
 footer {
     background-color: #56C9DB;
     color: aliceblue;
     padding: 15px 0;
+    text-align: center;
 }

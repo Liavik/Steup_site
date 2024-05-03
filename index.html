@@ -11,81 +11,103 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Liav1k Setup</h1>
+        <div class="cabeçalho">
+            <a id="titulo" href="#" title="início">Liav1k Setup</a>
+            <div>
+                <input type="text" placeholder="Oque deseja?" /> <button type="button">Buscar</button>
+            </div>
+            <a href="#" title="Favoritos">
+                <img src="./images/Coração.png" alt="Coração" />
+            </a>
+        </div>
+        <div class="setores">
             <nav>
                 <ul>
                     <li>
-                        <a href="#about">Sobre a loja</a>
+                        <a href="#">Headset</a>
                     </li>
                     <li>
-                        <a href="#contact">Contato</a>
+                        <a href="#">Teclado</a>
+                    </li>
+                    <li>
+                        <a href="#">Mouse</a>
+                    </li>
+                    <li>
+                        <a href="#">Mouse Pad</a>
+                    </li>
+                    <li>
+                        <a href="#">Microfone</a>
+                    </li>
+                    <li>
+                        <a href="#">Decorção</a>
+                    </li>
+                    <li>
+                        <a href="#">Outras categorias</a>
+                    </li>
+                    <li>
+                        <a href="#">Cupons</a>
+                    </li>
+                    <li>
+                        <a href="#">Informações</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="about">
-        <div class="container">
-            <img src="./images/setup.jpg" alt="Setup com estilo minimalista e branco">
+    <Section>
+        <img src="./images/Banner.png" alt="Banner com 3 variações de setup" />
+        <div class="enunciado">
+            <h2>
+                Ofertas da semana
+            </h2>
+            <p>
+                Confira as ofertas em destaque dessa semana:
+            </p>
+        </div>
+        <div class="ofertas">
             <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto necessitatibus! Aut, ad! Maiores libero atque dolorem ullam delectus iure cumque expedita rerum totam! Distinctio voluptatum magni placeat deleniti ut!
+                <img src="./images/Mouse.jpg" alt="Mouse" />
+                <p> 
+                    Mouse Sem Fio Logitech POP, 4000 DPI, Botão Emoji Customizável
                 </p>
+                <button type="button">Confira</button>
+            </div>
+            <div>
+                <img src="./images/Headset.jpg" alt="Headset" />
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto necessitatibus! Aut, ad! Maiores libero atque dolorem ullam delectus iure cumque expedita rerum totam! Distinctio voluptatum magni placeat deleniti ut!
+                    Headset Gamer Onikuma, RGB, Som Surround 7.1, Drivers 50mm
                 </p>
-                <ul class="brands-list">
-                    <li><img src="./images/nintendo.png" alt="Nintendo" /></li>
-                    <li><img src="./images/xbox.png" alt="xbox" /></li>
-                    <li><img src="./images/playstation.png" alt="playstation" /></li>
-                </ul>
+                <button type="button">Confira</button>
+            </div>
+            <div>
+                <img src="./images/Mousepad.jpg" alt="Mousepad" />
+                <p>
+                    Mousepad Desk Mat Logitech Studio Series, Grande 300x700mm
+                </p>
+                <button type="button">Confira</button>
+            </div>
+            <div>
+                <img src="./images/Teclado.jpg" alt="Mouse" />
+                <p>
+                    Teclado Gamer Redragon Shiva, RGB Branco e Rosa, ABNT2, Branco
+                </p>
+                <button type="button">Confira</button>
             </div>
         </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required />
-                        <input type="email" placeholder="Seu email" required />
-                        <input type="tel" placeholder="Seu telefone (opicional)" />
-                        <textarea placeholder="Sua mensagem" required ></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./images/instagram.png" alt="Logo do Instagram" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./images/facebook.png" alt="Logo do Facebook" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso caanl no Youtube">
-                                <img src="./images/youtube.png" alt="Logo do Youtube" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Numero Bairro - Cidade
-                    </p>
-                </div>
-            </div>
-        </div>
+    </Section>
+    <section class="pesquisa">
+        <h2>Pesquisa</h2>
+        <p>
+            Queremos saber como seria seu setup dos sonhos
+        </p>
+        <form>
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu email" required />
+            <input type="tel" placeholder="Whatsapp *opicional" />
+            <input type="text" placeholder="Paleta de cor do setup" required />
+            <textarea placeholder="Itens que não poderiam faltar" required ></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     <footer>
         <div class="container">
